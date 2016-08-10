@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$(".btn").click(function(){
-		$("#myModal").modal('show');
+	$(".descriptionModal").click(function(){
+		$("#descriptionModal").modal('show');
 	});
 });
 

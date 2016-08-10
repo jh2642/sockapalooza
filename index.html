@@ -17,10 +17,10 @@
     <!-- description modal -->
     <div class="bs-example">
         <!-- Button HTML (to Trigger Modal) -->
-        <a href="#" class="btn btn-lg btn-primary">Pretty Socks Here</a>
+        <a href="#" class="btn btn-lg btn-primary descriptionModal">Pretty Socks Here</a>
 
         <!-- Modal HTML -->
-        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div id="descriptionModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -48,62 +48,64 @@
                             <img src="https://unsplash.it/50" class="img-rounded featureTwo">
                             <img src="https://unsplash.it/50" class="img-rounded featureThree">
                         </div>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle sizeButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                size <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">small</a></li>
-                                <li><a href="#">medium</a></li>
-                                <li><a href="#">large</a></li>
-                                <li><a href="#">xl</a></li>
-                                <li><a href="#">xxl</a></li>
-                                <li><a href="#">xxxl</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn-group">
-                            <form id='myform' method='POST' action='#'>
-                                <!-- <label for=""> qty: </label> -->
-                                <input type='button' value='-' class='btn qtyminus' field='quantity' /><!--
-                                --><input type='text' name='quantity' value='0' class='input-group-addon qty' /><!--
-                            --><input type='button' value='+' class='btn qtyplus' field='quantity' />
+                        <div class="checkOutButtons">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle sizeButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    size <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">small</a></li>
+                                    <li><a href="#">medium</a></li>
+                                    <li><a href="#">large</a></li>
+                                    <li><a href="#">xl</a></li>
+                                    <li><a href="#">xxl</a></li>
+                                    <li><a href="#">xxxl</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <form id='myform' method='POST' action='#'>
+                                    <!-- <label for=""> qty: </label> -->
+                                    <input type='button' value='-' class='btn qtyminus' field='quantity' /><!--
+                                    --><input type='text' name='quantity' value='0' class='input-group-addon qty' /><!--
+                                --><input type='button' value='+' class='btn qtyplus' field='quantity' />
                             </form>
                         </div>
                         <button type="button" class="btn btn-add-cart">Add to Cart</button>
                     </div>
                 </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
-    <footer class="container-fluid footer-bottom">
-        <div class="footer-distributed row">
-            <div class="col-sm-3 col-md-offset-2 footer-left">
-                <h3>Contact Us:</h3>
-                <form action="#" method="post">
-                    <input type="text" name="email" placeholder="Email" />
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <button type="button" class="btn btn-send">Send</button>
-                </form>
+<footer class="container-fluid footer-bottom">
+    <div class="footer-distributed row">
+        <div class="col-sm-3 col-md-offset-2 footer-left">
+            <h3>Contact Us:</h3>
+            <form action="#" method="post">
+                <input type="text" name="email" placeholder="Email" />
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="button" class="btn btn-send">Send</button>
+            </form>
+        </div>
+        <div class="col-sm-3 col-md-offset-2 footer-right">
+            <div class="footer-right-a">
+                <h3>Address:</h3>
+                415 Market St.</br>
+                Indianapolis, IN 46204
             </div>
-            <div class="col-sm-3 col-md-offset-2 footer-right">
-                <div class="footer-right-a">
-                    <h3>Address:</h3>
-                    415 Market St.</br>
-                    Indianapolis, IN 46204
-                </div>
-                <div class="footer-right-b">
-                    <h3>About Us:</h3>
-                    We sell socks. We sell socks. We sell socks. We sell socks. We sell socks. We sell socks. We sell socks. We sell socks. We sell socks. We sell socks.
-                </div>
+            <div class="footer-right-b">
+                <h3>About Us:</h3>
+                We sell socks. We sell socks. We sell socks. We sell socks. We sell socks. We sell socks. We sell socks. We sell socks. We sell socks. We sell socks.
             </div>
         </div>
-        <div class="row text-center footer-company-name">
-            <img class="footer-logo" src="assets/logos/logo-white.png">
-        </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/descriptionModal.js"></script>
+    </div>
+    <div class="row text-center footer-company-name">
+        <img class="footer-logo" src="assets/logos/logo-white.png">
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/descriptionModal.js"></script>
 </body>
 </html>

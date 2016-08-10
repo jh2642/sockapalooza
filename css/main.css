@@ -16,6 +16,10 @@
   width: 100px;
 }
 
+.checkOutButtons {
+  padding-top: 20px;
+}
+
 .sizeButton {
   background-color: transparent;
   border: 2px solid #02426c;
